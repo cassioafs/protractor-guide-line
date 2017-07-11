@@ -1,2 +1,4 @@
 node_modules
 screenshots
+results.json
+cucumber_report.html

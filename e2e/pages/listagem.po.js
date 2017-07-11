@@ -7,7 +7,7 @@ class Listagem{
   }
 
   visit(){
-    browser.get('/#!/list');
+    return browser.get('/#!/list');
   }
 }
 module.exports = Listagem;
