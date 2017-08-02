@@ -2,9 +2,9 @@
 //protractor.conf.js
 'use strict'
 
-let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
- module.exports.config = {
+const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+const Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+module.exports.config = {
 directConnect: true,
  capabilities: {
  	'browserName': 'chrome',
