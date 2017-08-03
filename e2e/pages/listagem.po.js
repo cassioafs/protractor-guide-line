@@ -9,8 +9,5 @@ class Listagem{
   visit(){
     return browser.get('/#!/list');
   }
-  pesquisarPokemonPorNome(nomePokemon){
-    this.filtro.sendKeys(nomePokemon);
-  }
 }
 module.exports = Listagem;
