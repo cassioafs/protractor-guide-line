@@ -19,7 +19,7 @@ module.exports = function(){
     const EC = protractor.ExpectedConditions;
     browser.wait(EC.presenceOf(filtro));
     
-    filtro.sendKeys(nome).then(callback);
+    listagemPage.pesquisarPokemon(nome).then(callback);
   });
 
   this.Then(/^devo visulizar dois pokémons no resultado$/, function (callback) {
