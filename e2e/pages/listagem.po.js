@@ -1,6 +1,6 @@
 'use strict'
 
-class Listagem{
+class ListagemPage{
   constructor(){
     this.filtro = element(by.model('PokemonsController.filtro'));
     this.resultados = element.all(by.repeater('item in PokemonsController.pokemons'));;
@@ -15,4 +15,4 @@ class Listagem{
   }
 
 }
-module.exports = Listagem;
+module.exports = ListagemPage;
