@@ -1,5 +1,5 @@
 module.exports ={
-  pokemon:{
+  new_pokemon:{
     numero: "123",
     nome: "Teste",
     ataque: "80",
