@@ -2,7 +2,7 @@
 
 class ListagemPage{
   constructor(){
-    this.filtro = element(by.model('PokemonsController.filtro'));
+    this.filtro = element(by.dataTest('filtro'));
     this.resultados = element.all(by.repeater('item in PokemonsController.pokemons'));;
     this.btnAdicionar = element(by.linkText('Adicionar'));
     this.numero = element(by.model('PokemonsController.pokemon.id')); 
@@ -14,6 +14,7 @@ class ListagemPage{
     this.btnSalvar = element(by.buttonText('Salvar'));
 
     this.modalCampos = element(by.id('myModal'));
+
   }
 
   visit(){
