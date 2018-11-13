@@ -2,11 +2,13 @@
 
 exports.config = {
 
-  directConnect: true,
+  // directConnect: true,
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+
   ignoreUncaughtExceptions: true,
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
-  baseUrl: 'https://pokedex-angularjs.herokuapp.com',
+  baseUrl: 'https://pokedex-angular-example.herokuapp.com/',
   capabilities: {
     'browserName': 'chrome'
   },
@@ -39,6 +41,9 @@ exports.config = {
 
   onPrepare: function() {
     browser.ignoreSynchronization = true;
+    by.addLocator('dataTest',function(text) {
+      return document.querySelector(`[data-test="${text}"]`)
+    });
   },
 
   afterLaunch: function() {
